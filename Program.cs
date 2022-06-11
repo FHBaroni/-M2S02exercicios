@@ -13,5 +13,20 @@ class Program
 0  Sair
 
 Digite a opção: ");
+    
+
+    var option = (Console.ReadLine());   
+    switch(option)
+    {
+        case "1": 
+                CadastrarProduto ();
+                break;
+        default: break;
+    }
+    static void CadastrarProduto ()
+    {
+    Console.WriteLine("CadastrarProduto ok");
+    }
+
     }
 }
