@@ -52,7 +52,7 @@ class Program
         Console.WriteLine(" Digite o valor de compra");
         decimal valorCompra = Convert.ToDecimal(Console.ReadLine());
         Console.WriteLine(" Digite o valor de venda");
-        decimal valorVenda = Convert.ToDecimal(Console.ReadLine());
+        decimal valorVenda = Convert.ToDecimal                         (Console.ReadLine());
         Console.WriteLine($@"
   
  Produto cadastrado com sucesso!
