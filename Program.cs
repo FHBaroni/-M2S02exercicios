@@ -5,7 +5,7 @@ using GeraEstoque.Screens;
 
 class Program
 {
-  static void Main(string[] args)
+  static void Main()
   {
     MenuScreen.Iniciar();
   }
