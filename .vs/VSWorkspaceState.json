@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Models",
+    "\\Screens"
   ],
-  "SelectedNode": "\\C:\\c#projetos\\GeraEstoque",
+  "SelectedNode": "\\Models\\Produto.cs",
   "PreviewInSolutionExplorer": false
 }
