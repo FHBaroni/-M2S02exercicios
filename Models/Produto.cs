@@ -14,9 +14,9 @@ public class Produto
     public int custo { get; set; }
     public int venda { get; set; }
 
-    public override string ToString() => $" Produto: Id: {id} |  Nome: {nome} | Qtd: {quantidade} | R$ Compra: {custo} | R$ Venda: {venda}";
-
-
-    
+   public override string ToString()
+    {
+        return $" Produto: Id: {id} |  Nome: {nome} | Qtd: {quantidade} | R$ Compra: {custo} | R$ Venda: {venda}";
+    }         
 
 }
