@@ -1,35 +1,27 @@
 ﻿namespace GeraEstoque.Screens;
+using GeraEstoque.Repositories;
+using GeraEstoque.Models;
 
 
 public static class CriarProdutoScreen
 {
-    public static void Iniciar() {
+    public static void  Iniciar (ProdutoRepository repository) {
 
-            var id = Guid.NewGuid();
+            string id = Guid.NewGuid().ToString();
             Console.WriteLine(" Digite o nome do produto");
             string nome = Console.ReadLine();
             Console.WriteLine(" Digite a quantidade em estoque");
             int quantidade = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine(" Digite o valor de compra");
-            decimal valorCompra = Convert.ToDecimal(Console.ReadLine());
+            double valorCompra = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine(" Digite o valor de venda");
-            decimal valorVenda = Convert.ToDecimal(Console.ReadLine());
-            Console.WriteLine($@"
-  
- Produto cadastrado com sucesso!
+            var valorVenda = Convert.ToDouble(Console.ReadLine());
 
- Nome: Produto {nome}
- Qtd: {quantidade}
- R$ Compra: R$ {valorCompra}
- R$ Venda:  R$ {valorVenda}
- ID: {id};
+        var produto = new Produto(nome, quantidade, valorCompra, valorVenda);
+        Console.WriteLine($" Produto cadastrado com sucesso! Pressione qualquer tecla para voltar ao menu principal");
 
- Pressione qualquer tecla para voltar ao menu principal");
-            Console.ReadKey();
-        MenuScreen.Iniciar();
-
-
+        Console.ReadKey();
+        MenuScreen.Iniciar(repository);
     }
-    
-	
 }
+	

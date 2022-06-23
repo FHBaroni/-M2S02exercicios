@@ -1,9 +1,9 @@
 ﻿namespace GeraEstoque.Screens;
-
+using GeraEstoque.Repositories;
 
 public static class MenuScreen
 {
-	public static void Iniciar ()
+	public static void Iniciar (ProdutoRepository repository)
 {
 
         Console.Write(@"
@@ -21,7 +21,7 @@ public static class MenuScreen
         switch (option)
         {
             case "1":
-                CriarProdutoScreen.Iniciar();
+                CriarProdutoScreen.Iniciar(repository);Iniciar(repository);
             //Iniciar();
                 break;
            case "0":
