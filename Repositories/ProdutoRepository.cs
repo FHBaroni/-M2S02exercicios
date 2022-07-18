@@ -1,14 +1,14 @@
-namespace GeraEstoque.Repositories;
-
 using GeraEstoque.Models;
+
+namespace GeraEstoque.Repositories;
 
 public class ProdutoRepository
 {
-    IList<Produto> ListaProdutos;
+    public IList<Produto> Produtos { get; set; }
 
     public ProdutoRepository()
     {
-        ListaProdutos = new List<Produto>();
+        Produtos = new List<Produto>();
     }
 }
 

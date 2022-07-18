@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\Models",
+    "\\Repositories",
     "\\Screens"
   ],
   "SelectedNode": "\\Models\\Produto.cs",
