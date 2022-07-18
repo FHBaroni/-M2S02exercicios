@@ -25,6 +25,7 @@ class ListarProdutoScreen
             //System.Console.WriteLine("=============================");
         }
         Console.ReadLine();
+        MenuScreen.Iniciar(repository);
     }
 }
 //Implemente a classe** ListarProdutosScreen** criada no exercício **2**, adicionando um método** Iniciar** estático e público,
